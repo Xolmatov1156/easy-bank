@@ -248,6 +248,7 @@ body {
 @media (max-width: 436px) {
   .hero__content-wrapper {
     width: 327px;
+    margin: 0 auto;
   }
   .hero__content-wrapper h2 {
     width: 327px;
