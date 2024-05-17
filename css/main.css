@@ -344,7 +344,7 @@ body {
   }
 }
 .latest-section {
-  padding-top: 80px;
+  padding: 80px 0;
 }
 
 .latest__title {
@@ -418,7 +418,7 @@ body {
     flex-direction: column;
   }
   .latest-section {
-    padding-top: 88px;
+    padding: 88px 0;
   }
   .latest__item {
     width: 316px;
