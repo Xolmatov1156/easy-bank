@@ -1,96 +1,58 @@
 .site-header {
-    padding: 18px 0;
-    background: var(--header-bg);
-    position: relative;
-    max-height: 80px;
-}
-
+     position: relative;
+     z-index: 999999;
+     padding: 18px 0;
+      background: var(--header-bg);
+} 
 .header-top {
-    @include display($align:center, $space:space-between)
-}
-
+     @include display($al:center, $jc:space-between) 
+} 
 .header-top__link {
-    display: inline-block;
-}
-
+         display: inline-block; 
+} 
 .navbar__list {
-    @include display($align:center, $space:space-between);
-}
-
+     @include display($al:center,$jc:center); 
+} 
 .navbar__item + .navbar__item {
-    margin-left: 30px;
+         margin-left: 30px; 
+        } 
+.navbar__link { 
+    @include linkStyle(); 
+} 
+.header-top__mode-wrapper{
+     @include display($al:center, $jc:space-between);
+      gap: 10px; 
 }
 
-.navbar__link {
-    @include linkStyle();
+.header-top__mode-btn{
+        padding: 5px;
+        border-radius: 50%;
+        width: 40px;
+         height: 40px;
+        background: var(--btn-bg);
+         border: none;
+        color: var(--moon-color);
+        @include display($al:center,$jc:center);
+        cursor: pointer;
 }
-
-.header-top__mode-wrapper {
-    @include display($align:center, $space:space-between);
-    gap: 10px;
-}
-
-.header-top__mode-btn {
-    padding: 5px;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    background: var(--btn-bg);
-    border: none;
-    color: var(--moon-color);
-    @include display($align:center, $space:space-between);
-    cursor: pointer;
-}
-
-.header-menu {
-    padding: 24px;
-}
-
-.menu__list {
-    padding: 32px 0px;
-    width: 90%;
-    margin: 0 auto;
-    left: -200%;
-    right: 0;
-    text-align: center;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    border-radius: 5px;
-    position: absolute;
-    transition: all 0.5s;
-}
-
-.menu__link {
-    font-size: 18px;
-    color: #2D314D;
-}
-
 .header-top__request-btn {
-    @include buttonStyle($w:163px);
+     @include buttonStyle($w:163px) 
 }
-
-.header-top__hamburger-btn {
+ .header-top__hamburger-btn {
     display: none;
     border: none;
-    background: transparent;
-    color: var(--hamburger-color);
-}
+    background: transparent; 
+} 
 
+@media (max-width:763px) {
+     .site-header{
+          padding: 22px 0;
+     }
+     .header-top__navbar, .header-top__request-btn{
+          display: none;
+     }
+     .header-top__hamburger-btn{
+          display: block;
+     }
+} 
 
-
-@media (max-width:763px){
-    .site-header {
-        height: 64px;
-    }
-    .navbar, .header-top__request-btn {
-        display: none;
-    }
-    .header-top__hamburger-btn {
-        display: block;
-    }
-    .open {
-        left: 0;
-    }
-}

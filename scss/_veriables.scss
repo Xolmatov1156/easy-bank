@@ -1,26 +1,24 @@
 :root{
     --nav-color:rgb(149, 151, 165);
     --btn-bg:linear-gradient(134.71deg, rgb(51, 211, 94) -43.027%,rgb(42, 182, 217) 56.553%);
-    --btn-bg-hover:linear-gradient #6ef091, #6dbfd3;
     --btn-color:rgb(255, 255, 255);
     --header-bg:rgb(255, 255, 255);
-    --moon-color: white;
-    --hamburger-color: black;
+    --moon-color:white
+    --hero-bg:#FAFAFA
 }
 
 .mode{
     --nav-color:white;
-    --btn-bg: crimson;
-    --btn-color: white;
-    --header-bg: #333;
-    --moon-color: #333;
-    --hamburger-color: white;
+    --btn-bg:rgb(173, 173, 173);
+    --btn-color:black;
+    --header-bg:#333;
+    --moon-color:#333
 }
 
-@mixin display($align:center, $space:space-between){
+@mixin display($al:center, $jc:space-between){
     display: flex;
-    align-items: $align;
-    justify-content: $space;
+    align-items:$al;
+    justify-content: $jc;
 }
 
 
@@ -45,4 +43,16 @@
     letter-spacing: 0px;
     border: none;
     cursor: pointer;
+}
+
+@mixin text_title (){
+    font-size: 40px;
+    font-weight: 100;
+    color: #2D314D;
+}
+
+@mixin text (){
+    font-size: 18px;
+    line-height: 28px;
+    color: #9597A5;
 }

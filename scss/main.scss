@@ -1,5 +1,7 @@
-@import "./fonts";
-@import "./variables";
-@import "./container";
-@import "./generals.scss";
-@import "./blocks/all_blocks";
+@charset "UTF-8";
+@import "fonts";
+@import "veriables";
+@import "generals";
+@import "container";
+@import "visually-hidden";
+@import "blocks/block";
