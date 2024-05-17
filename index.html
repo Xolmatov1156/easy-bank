@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="./css/main.css"/>
     <link rel="icon" href="./images/site-logo.svg">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Easy Bank</title>
   </head>
 <body>
-<header class="site-header">
+<header class="site-header" data-aos="zoom-in" data-aos-duration="1500">
   <div class="container">
     <div class="header-top">
       <a href="/" class="header-top__link" >
@@ -39,7 +40,7 @@
   </div>
 </header>
 <main class="site-main">
-  <section class="hero-section hero">
+  <section class="hero-section hero" data-aos="zoom-in" data-aos-duration="1500">
     <div class="container">
       <div class="hero__content-wrapper">
         <h2 class="hero__text-title">Next generation digital banking</h2>
@@ -57,7 +58,7 @@
     </div>
   </section>
   <section class="choose-section">
-    <div class="container">
+    <div class="container" data-aos="zoom-in" data-aos-duration="1500">
       <div class="choose">
         <div class="choose-text__wrapper">
           <h2 class="choose__title">Why choose Easybank?</h2>
@@ -88,7 +89,7 @@
       </div>
     </div>
   </section>
-  <section class="latest-section">
+  <section class="latest-section" data-aos="zoom-in" data-aos-duration="1500">
     <div class="container">
       <div class="latest">
         <h2 class="latest__title">Latest Articles</h2>
@@ -130,7 +131,10 @@
     </div>
   </section>
 </main>
-
 <script src="./js/app.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>
