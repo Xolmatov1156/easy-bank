@@ -28,6 +28,7 @@
 .hero__button{
     @include buttonStyle($w:163px);
 }
+
 .hero-img{
     position: absolute;
     top: 0;
