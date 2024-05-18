@@ -146,7 +146,7 @@ body {
   padding-bottom: 10px;
 }
 .navbar__item:hover {
-  border-bottom: 2px solid green;
+  border-bottom: 2px solid rgb(134, 182, 134);
 }
 
 .menu__list {
