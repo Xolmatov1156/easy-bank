@@ -18,7 +18,7 @@
     --hamburger-color: white;
 }
 
-@mixin display($al:center, $jc:space-between){
+@mixin display($al:center, $jc:space-between,){
     display: flex;
     align-items:$al;
     justify-content: $jc;
