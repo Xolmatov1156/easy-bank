@@ -45,6 +45,15 @@
     color: var(--hamburger-color);
 } 
 
+
+.navbar__item {
+     padding-bottom: 10px;
+     &:hover {
+          border-bottom: 2px solid green;
+     }
+}
+
+
 .menu__list {
      padding: 32px 0;
      width: 90%;
@@ -79,6 +88,9 @@
      }
      .open {
           left: 0;
+     }
+     .menu__list {
+          margin-top: 50px;
      }
 } 
 
